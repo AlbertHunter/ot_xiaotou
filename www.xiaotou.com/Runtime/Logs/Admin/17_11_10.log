@@ -1,0 +1,46 @@
+[ 2017-11-10T17:46:50+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.028355s ]
+INFO: [ app_init ] --END-- [ RunTime:0.030823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005287s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0000s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161273s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005764s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001986s ]
+

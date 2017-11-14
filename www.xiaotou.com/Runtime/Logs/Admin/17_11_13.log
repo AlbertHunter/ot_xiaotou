@@ -1,0 +1,1367 @@
+[ 2017-11-13T17:54:47+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/edit/id/1/model/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.012134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004557s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0416s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/edit%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 127 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0237s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0039s ]
+SQL: SELECT `field_sort`,`attribute_list`,`attribute_alias` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000223s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153791s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003673s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002226s ]
+
+[ 2017-11-13T17:54:59+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.017932s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004452s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/update%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: UPDATE `ot_caiji_rule` SET `title`='测试节点',`webname`='dede168',`weburl`='http://www.topthink.com/',`remark`='',`str_rules`='',`reg_rules`='',`update_time`='1510566899' WHERE `id` = 1 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Model/CaijiRuleModel.class.php 第 66 行.
+
+[ 2017-11-13T17:55:01+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008751s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0005s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090768s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002963s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002132s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002172s ]
+
+[ 2017-11-13T17:59:01+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/edit/id/1/model/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011178s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002082s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/edit%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 127 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0001s ]
+SQL: SELECT `field_sort`,`attribute_list`,`attribute_alias` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031481s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002624s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002664s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001940s ]
+
+[ 2017-11-13T17:59:07+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.013462s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014949s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003142s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/update%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: UPDATE `ot_caiji_rule` SET `title`='测试节点',`webname`='dede168',`weburl`='http://www.dede168.com/',`remark`='',`str_rules`='',`reg_rules`='',`update_time`='1510567147' WHERE `id` = 1 [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Model/CaijiRuleModel.class.php 第 66 行.
+
+[ 2017-11-13T17:59:09+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006066s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001581s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0006s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001593s ]
+
+[ 2017-11-13T18:02:44+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/edit/id/1/model/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009885s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003063s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/edit%' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 127 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0001s ]
+SQL: SELECT `field_sort`,`attribute_list`,`attribute_alias` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035646s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001990s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001922s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001959s ]
+
+[ 2017-11-13T18:02:49+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008990s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001914s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/update%' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: UPDATE `ot_caiji_rule` SET `title`='测试节点',`webname`='dede168',`weburl`='http://www.topthink.com/',`remark`='',`str_rules`='',`reg_rules`='',`update_time`='1510567369' WHERE `id` = 1 [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Model/CaijiRuleModel.class.php 第 66 行.
+
+[ 2017-11-13T18:02:51+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001797s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023795s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001491s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2017-11-13T20:21:36+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/edit/id/1/model/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.013461s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002419s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/edit%' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 127 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0001s ]
+SQL: SELECT `field_sort`,`attribute_list`,`attribute_alias` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.105952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002460s ]
+
+[ 2017-11-13T20:21:42+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007483s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001754s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/update%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: UPDATE `ot_caiji_rule` SET `title`='测试节点',`webname`='dede168',`weburl`='http://www.dede168.com/',`remark`='',`str_rules`='',`reg_rules`='',`update_time`='1510575702' WHERE `id` = 1 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Model/CaijiRuleModel.class.php 第 66 行.
+
+[ 2017-11-13T20:21:44+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008813s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009921s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004642s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0002s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002139s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002176s ]
+
+[ 2017-11-13T20:36:05+08:00 ] 10.0.2.2 /admin.php?s=/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.010023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012172s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003041s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `ot_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001909s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002020s ]
+
+[ 2017-11-13T20:36:07+08:00 ] 10.0.2.2 /admin.php?s=/Model/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002432s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Model/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_model` WHERE `status` > -1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `id`,`name`,`title`,`extend`,`relation`,`need_pk`,`field_sort`,`field_group`,`attribute_list`,`attribute_alias`,`template_list`,`template_add`,`template_edit`,`list_grid`,`list_row`,`search_key`,`search_list`,`create_time`,`update_time`,`status`,`engine_type` FROM `ot_model` WHERE `status` > -1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002339s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002062s ]
+
+[ 2017-11-13T20:36:08+08:00 ] 10.0.2.2 /admin.php?s=/Config/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.010325s ]
+INFO: [ app_init ] --END-- [ RunTime:0.011680s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001890s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Config/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_config` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `ot_config` WHERE `status` = 1 ORDER BY sort,id LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002374s ]
+
+[ 2017-11-13T20:36:12+08:00 ] 10.0.2.2 /admin.php?s=/Config/edit/id/38.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011636s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Config/edit%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `ot_config` WHERE `id` = 38 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001793s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002237s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002272s ]
+
+[ 2017-11-13T20:36:18+08:00 ] 10.0.2.2 /admin.php?s=/Config/edit/id/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006358s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Config/edit%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 70 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`type`,`title`,`group`,`extra`,`remark`,`create_time`,`update_time`,`status`,`value`,`sort` FROM `ot_config` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001577s ]
+
+[ 2017-11-13T20:39:09+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007074s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`value`,`remark`,`type`,`extra` FROM `ot_caiji_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Controller/CaijiController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.154178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.154236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002620s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002674s ]
+
+[ 2017-11-13T20:41:35+08:00 ] 10.0.2.2 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006386s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0006s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.0201s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ot_action_log` [ RunTime:0.0109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_action_log` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_model` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.172465s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056813s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009299s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.189315s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.463461s ]
+SQL: select version() as v; [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042265s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.243019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.276091s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.276099s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.508002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009434s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.299860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.300025s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.023875s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.489422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009554s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.299860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000004s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.300114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001676s ]
+
+[ 2017-11-13T20:41:37+08:00 ] 10.0.2.2 /admin.php?s=/Config/group.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008635s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002531s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_config` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `ot_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022390s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001517s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001548s ]
+
+[ 2017-11-13T20:41:39+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006342s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/index%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`value`,`remark`,`type`,`extra` FROM `ot_caiji_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Controller/CaijiController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001743s ]
+
+[ 2017-11-13T20:41:40+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007240s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0000s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025786s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001787s ]
+
+[ 2017-11-13T20:41:43+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/edit/id/1/model/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005909s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001549s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/edit%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 127 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0001s ]
+SQL: SELECT `field_sort`,`attribute_list`,`attribute_alias` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028946s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001578s ]
+
+[ 2017-11-13T20:41:44+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006939s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001752s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/update%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0003s ]
+SQL: UPDATE `ot_caiji_rule` SET `title`='测试节点',`webname`='dede168',`weburl`='http://www.dede168.com/',`remark`='',`str_rules`='',`reg_rules`='',`update_time`='1510576904' WHERE `id` = 1 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Model/CaijiRuleModel.class.php 第 66 行.
+
+[ 2017-11-13T20:41:45+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006333s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001665s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0002s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0004s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020414s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001568s ]
+
+[ 2017-11-13T20:41:48+08:00 ] 10.0.2.2 /admin.php?s=/Public/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007305s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008405s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001606s ]
+
+[ 2017-11-13T20:41:49+08:00 ] 10.0.2.2 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006514s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007533s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032060s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002355s ]
+
+[ 2017-11-13T20:41:49+08:00 ] 10.0.2.2 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.010819s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002709s ]
+
+[ 2017-11-13T20:41:55+08:00 ] 10.0.2.2 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.008247s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009229s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001946s ]
+
+[ 2017-11-13T20:41:55+08:00 ] 10.0.2.2 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006601s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001843s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001886s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001685s ]
+
+[ 2017-11-13T20:41:55+08:00 ] 10.0.2.2 /admin.php?s=/Public/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006985s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003101s ]
+
+[ 2017-11-13T20:42:04+08:00 ] 10.0.2.2 /admin.php?s=/Public/verify.html&random=0.3875540822516115
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.005801s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006794s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001576s ]
+
+[ 2017-11-13T20:42:10+08:00 ] 10.0.2.2 /admin.php?s=/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006928s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+NOTIC: [8] Undefined index: lite /web/www/www.xiaotou.com/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `ot_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `ot_action` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `ot_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `ot_action_log` [ RunTime:0.0004s ]
+SQL: INSERT INTO `ot_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','167772674','member','1','1510576930','Administrator在2017-11-13 20:42登录了后台') [ RunTime:0.0154s ]
+SQL: SELECT * FROM `ot_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 1 /web/www/www.xiaotou.com/Application/Common/Common/function.php 第 679 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /web/www/www.xiaotou.com/Application/Common/Common/function.php 第 679 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1510490530 LIMIT 1   [ RunTime:0.0436s ]
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.0018s ]
+SQL: UPDATE `ot_member` SET `score`=score+10 WHERE ( uid=1 AND status>-1 ) [ RunTime:0.0008s ]
+SQL: UPDATE `ot_member` SET `login`=`login`+1,`last_login_time`='1510576930',`last_login_ip`='167772674' WHERE `uid` = 1 [ RunTime:0.0006s ]
+
+[ 2017-11-13T20:42:11+08:00 ] 10.0.2.2 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009461s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `ot_addons` [ RunTime:0.0004s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_member` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_action_log` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_action_log` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_document` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_document` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_category` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_category` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_model` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.018642s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001460s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.019070s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.339718s ]
+SQL: select version() as v; [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033159s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.298323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.330155s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.330200s ]
+SQL: SELECT `config` FROM `ot_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.372331s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017521s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.342960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.359257s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.029102s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.378451s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017818s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.342960s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.359494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005685s ]
+
+[ 2017-11-13T21:16:53+08:00 ] 10.0.2.2 /admin.php?s=/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.030203s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002341s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ot_member` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ot_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status` FROM `ot_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097365s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003289s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002154s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002194s ]
+
+[ 2017-11-13T21:16:54+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.006531s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/index%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0005s ]
+SQL: SELECT `id`,`name`,`title`,`value`,`remark`,`type`,`extra` FROM `ot_caiji_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Controller/CaijiController.class.php 第 40 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004222s ]
+
+[ 2017-11-13T21:16:57+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.011265s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002062s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0006s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.177872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003035s ]
+
+[ 2017-11-13T21:16:59+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/edit/id/1/model/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.046777s ]
+INFO: [ app_init ] --END-- [ RunTime:0.051100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001731s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/edit%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 127 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0002s ]
+SQL: SELECT `field_sort`,`attribute_list`,`attribute_alias` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005098s ]
+
+[ 2017-11-13T21:17:04+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.033550s ]
+INFO: [ app_init ] --END-- [ RunTime:0.034842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002581s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/update%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: UPDATE `ot_caiji_rule` SET `title`='测试节点',`webname`='dede168',`weburl`='http://www.topthink.com/',`remark`='',`str_rules`='',`reg_rules`='',`update_time`='1510579024' WHERE `id` = 1 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Model/CaijiRuleModel.class.php 第 66 行.
+
+[ 2017-11-13T21:17:06+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.009596s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006319s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0041s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0007s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038056s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001951s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001509s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001541s ]
+
+[ 2017-11-13T21:35:32+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/edit/id/1/model/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.010723s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002536s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/edit%' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 127 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0001s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`title`,`field`,`type`,`value`,`remark`,`is_show`,`extra`,`model_id`,`is_must`,`status`,`update_time`,`create_time`,`validate_rule`,`validate_time`,`error_info`,`validate_type`,`auto_rule`,`auto_time`,`auto_type` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0001s ]
+SQL: SELECT `field_sort`,`attribute_list`,`attribute_alias` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.018134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002075s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002124s ]
+
+[ 2017-11-13T21:35:38+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.007953s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002821s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/update%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0003s ]
+SQL: UPDATE `ot_caiji_rule` SET `title`='测试节点',`webname`='dede168',`weburl`='http://www.dede168.com/',`remark`='',`str_rules`='',`reg_rules`='',`update_time`='1510580138' WHERE `id` = 1 [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: id /web/www/www.xiaotou.com/Application/Admin/Model/CaijiRuleModel.class.php 第 66 行.
+
+[ 2017-11-13T21:35:40+08:00 ] 10.0.2.2 /admin.php?s=/Caiji/jiedian.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: Run Common\Behavior\InitHookBehavior [ RunTime:0.015931s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001630s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+SQL: SHOW COLUMNS FROM `ot_menu` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`url` FROM `ot_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0001s ]
+SQL: SELECT `pid` FROM `ot_menu` WHERE ( pid !=0 AND url like '%Caiji/jiedian%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `ot_menu` WHERE `id` = 124 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT  `group` FROM `ot_menu` WHERE `group` <> '' AND `pid` = 124  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`url` FROM `ot_menu` WHERE `pid` = 124 AND `hide` = 0  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `ot_menu` WHERE `group` = '采集管理' AND `pid` = 124 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_model` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_model` WHERE `name` = 'caiji_rule' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `ot_caiji_rule` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `ot_caiji_rule` WHERE ( status>=0 )  [ RunTime:0.0001s ]
+SQL: SELECT `extend` FROM `ot_model` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `ot_attribute` [ RunTime:0.0003s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `ot_attribute` WHERE `model_id` = 4  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+NOTIC: [8] Undefined variable: meta_title /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 5 行.
+SQL: SHOW COLUMNS FROM `ot_caiji_config` [ RunTime:0.0006s ]
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+SQL: SELECT `value` FROM `ot_caiji_config` WHERE `name` = 'DEFAULT_RULE' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: type /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 36 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined index: category_id /web/www/www.xiaotou.com/Application/Admin/Common/function.php 第 58 行.
+NOTIC: [8] Undefined variable: _page /web/www/www.xiaotou.com/Runtime/Cache/Admin/4047700f5de07901184d9eeb40ef93e3.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.111535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.111625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001986s ]
+
